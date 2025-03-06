@@ -8,8 +8,8 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .padding()
 
-                NavigationLink(destination: Text("Daily Dashboard")) {
-                    Text("Get Started")
+                NavigationLink(destination: SignUpView()) {
+                    Text("Sign Up")
                         .foregroundColor(.white)
                         .padding()
                         .background(Color.blue)

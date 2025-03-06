@@ -1,14 +1,11 @@
-//
-//  AIhealthcoachApp.swift
-//  AIhealthcoach
-//
-//  Created by Frank Nivicela on 3/6/25.
-//
-
 import SwiftUI
+import Firebase
 
-@main
-struct AIhealthcoachApp: App {
+@main  // This marks this as the entry point of the app
+struct AIHealthCoachApp: App {
+    // Associate AppDelegate with the App struct by making it a property
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate  // Use property wrapper here
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
